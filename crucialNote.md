@@ -25,6 +25,7 @@ rm <filename.extension> : delete file in cwd
 
 - add file to repo to specific existed repo
 git remote add origin https://github.com/milkywoosh/jstrial-milkywoosh.git
+git remote add origin <http of the repo>
 
 - push file to github repo
 git push -u  origin master  [master adalah nama branch utama di Github]
@@ -34,6 +35,9 @@ git remote -v
 
 - delete push
 git remote rm origin
+
+- after commit change the code in local git
+git push : to push commit to Github repo
 
 
 
