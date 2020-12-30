@@ -13,6 +13,7 @@
 // } while (i <= 5);
 
 
+<<<<<<< HEAD
 // var input = "Bagong pergi mencari jus jeruk"
 
 // if (input) {
@@ -32,7 +33,33 @@
   
 //   }
 // }
+=======
+let input = "John Lennon";
 
+if (input) {
+  var storedTemp = '';
+  for (let i=0; i<input.length; i++) {
+    if (input[i] === ' ') {
+      // jika ' ' maka print storedTemp
+      console.log(storedTemp);
+      // fungsi next storedTemp: assign '' baru
+      // shg saat increment input[i] baru
+      // storedTemp yg diprint sebelumnya replaced
+      storedTemp = 'x'; //???
+      
+    } else {
+      storedTemp+=input[i];
+    }
+
+    if (i === input.length-1) {
+      //saat i ke 1 maka print storedTemp
+      console.log(storedTemp);
+    }
+  }
+} else {
+  console.log('the input is invalid')
+}
+>>>>>>> f1bb9454f16f0e996243bbfecdc178576dd13888
 
 /**
  * Buatlah sebuah program yang akan mengurutkan huruf dari sebuah input string.
