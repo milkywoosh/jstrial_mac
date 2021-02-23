@@ -13,14 +13,13 @@
 // } while (i <= 5);
 
 
-<<<<<<< HEAD
 // var input = "Bagong pergi mencari jus jeruk"
 
 // if (input) {
 //   let toDisplay = ' ';
 //   for (let i=0; i<=input.length; i++) {
     
-//     if (input[i] === '') {
+//     if (input[i] === ' ') {
 //       console.log(toDisplay);
 //       toDisplay = '';
 //   } else {
@@ -33,7 +32,8 @@
   
 //   }
 // }
-=======
+
+/*
 let input = "John Lennon";
 
 if (input) {
@@ -59,7 +59,9 @@ if (input) {
 } else {
   console.log('the input is invalid')
 }
->>>>>>> f1bb9454f16f0e996243bbfecdc178576dd13888
+
+*/
+
 
 /**
  * Buatlah sebuah program yang akan mengurutkan huruf dari sebuah input string.
@@ -108,41 +110,130 @@ if (input) {
 // }
 
 
-/**
+/*
  * Buatlah sebuah program yang akan mencari sebuah string di dalam string.
  * String input akan terdapat pada variable input.
  * String yang dicari akan terdapat pada variable search.
  *
  * Output yang diharapkan dari program adalah:
  *   - true  : jika search terdapat dalam input
- *   - false : jika search tidak terdapat dalam input
- */
+   - false : jika search tidak terdapat dalam input
+*/
 
-// var input = "Fisika SMA Terpadu Kelas XI";
-// var search = "SMA";
-// var inputIter='';
-// var searchIter='';
 
-// for (let i=0; i<search.length; i++) {
-//   for (let j=0; j<input.length; j++) {
+/*
+var input = "Fisika SMA Terpadu Kelas XI";
+var search = "SMA";
+var inputIter='';
+var searchIter='';
+
+for (let i=0; i<search.length; i++) {
+  for (let j=0; j<input.length; j++) {
     
-//     if (input[j] === ' ') {
-//       console.log(inputIter);
+    if (input[j] === ' ') {
+      console.log(inputIter);
       
-//       inputIter;
-//     } else if (search[i] != 'SMA'){
-//       console.log(searchIter);
-//       searchIter;
+      inputIter;
+    } else if (search[i] != 'SMA'){
+      console.log(searchIter);
+      searchIter;
       
-//       // console.log('nothing');
-//     } else {
-//       searchIter+=search[i];
-//       inputIter+=input[j];
-//       // console.log('last part');
-//     }
-//   }
-// }
+      // console.log('nothing');
+    } else {
+      searchIter+=search[i];
+      inputIter+=input[j];
+      // console.log('last part');
+    }
+  }
+}
 
-var cek = "the things inside";
-var n = cek.includes("things");
-console.log(n)
+*/
+
+//ternary
+
+
+
+
+/*
+let sentence = 'Help us understand how to make MDN better for beginners (5 minute survey)';
+// let target = 'school';
+let store = [];
+let markToFilter = [' ', '(', ')'];
+let filteringMark = markToFilter.every( e => (e == ' ' || e == '(' || ')') );
+console.log(filteringMark);
+let piece = '';
+
+if (sentence) {
+  for (let i=0; i<sentence.length; i++) {
+    
+    
+
+    if (sentence[i] == ' ') {
+      store.push(piece);
+      console.log(piece);
+      piece = ''
+    } else if (sentence[i] != ' ' && sentence[i] != '(' && sentence[i] != ')'){ 
+      // (sentence[i] != ' ' && sentence[i] != '(' && sentence[i] != ')')
+      piece+=sentence[i];
+    } 
+
+    if (i == (sentence.length-1)) {
+      store.push(piece);
+      // console.log(piece);
+    }
+      
+  }
+}
+
+console.log('so this is the array result: ', store);
+
+*/
+
+
+/*
+state = { 
+  counters : [
+      {id: 1, value: 0},
+      {id: 2, value: 0},
+      {id: 3, value: 0},
+      {id: 4, value: 0}
+  ],
+  anything: 'nice',
+  anythingx: 'okay'
+}
+
+  /* Below is the way to  Increment
+     state.counters.value
+  /*
+
+const clone = [...state.counters];
+const index = clone.indexOf(0);
+clone[0] = {id: 1, value: 0}
+clone[1] = {id: 2, value: 0}
+clone[0].value++
+clone[1].value++
+console.log(clone);
+*/
+
+
+/*  
+  // ---- CHECK MAX LENGTH OF STRING IN ARRAY
+  // ----- DONT DELETE
+function findLongestWordLength(str) {
+  let arr = str.split(' ');
+  let pool = [];
+ 
+  for (let i=0; i<arr.length; i++) {
+    pool.push(arr[i].length);
+  } 
+  
+  let max = pool.reduce( function (a, b) {
+      return Math.max(a , b)
+  })
+  
+  return max
+  //return str.length;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
