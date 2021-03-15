@@ -47,6 +47,8 @@ git pull origin master
 git clone http address of repository
 
 
+- go to specific branch
+git checkout -b namebranch
 
 
 
