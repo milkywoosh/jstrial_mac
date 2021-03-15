@@ -289,6 +289,33 @@ findLongestWordLength("The quick brown fox jumped over the lazy dog");
 */
 
 
+// EXERCISE HACKTIV8
+
+function largestPair(arr) {
+  let subarr = [];
+  arr = String(arr);
+  let value;
+  for (let i=0; i<arr.length; i++) {
+    if (i<arr.length-1) {
+      // console.log(i);
+      // console.log(arr[i])
+      // console.log(arr[i+1])
+      value = Number(arr[i]+ arr[i+1]);
+      subarr.push(value);
+    }
+  }
+  let val;
+  for (let j=0; j<subarr.length; j++) {
+   val = subarr[j]
+    if (val > subarr[j+1]) {
+      subarr[j+1] = val;
+    }
+  }
+  return val;
+}
+console.log(largestPair(641523479284234373));
+
+
 
 
 
