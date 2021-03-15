@@ -40,10 +40,13 @@ git remote rm origin
 git push : to push commit to Github repo
 
 - fetch the changing after other person commit a change in our repo
+first -> git fetch 
 git pull origin master
 
 - clone folder and data from github repo
 git clone http address of repository
+
+
 
 
 

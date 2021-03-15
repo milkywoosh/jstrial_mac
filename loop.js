@@ -237,3 +237,58 @@ function findLongestWordLength(str) {
 
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
 
+*/
+
+
+/*
+
+let numArray = [3,2,45,3,1];
+
+let result = Math.max.apply(null, numArray);
+
+function getMaxArray( arg ) {
+    
+    return arg.reduce((a,b) => {
+         return Math.max(a, b);
+    });
+    
+}
+
+console.log(getMaxArray(numArray));
+
+*/
+
+
+
+// DONT DELETE: FIND THE LONGEST STRING IN SENTENCE;
+/*
+
+function findLongestWordLength(str) {
+  let store=[];
+  let valueLength = 0;
+  // join the string by separating sentence with " ";
+  for (let i=0; i<str.length; i+=1) {
+      if (str[i] != " ") {
+        valueLength+= 1;
+        store.push(valueLength);
+      } else {
+        valueLength=0;
+      }
+      
+  }
+
+  let strLong = store.reduce( function ( a, b) {
+    return Math.max(a,b);
+  })
+  
+  return strLong;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+*/
+
+
+
+
+
