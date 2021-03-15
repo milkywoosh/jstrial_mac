@@ -50,5 +50,8 @@ git clone http address of repository
 - go to specific branch
 git checkout -b namebranch
 
+- push to remote branch github
+git push origin HEAD:branch2
+
 
 
