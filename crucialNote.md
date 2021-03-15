@@ -46,6 +46,9 @@ git pull origin master
 - clone folder and data from github repo
 git clone http address of repository
 
+- push update to remote branch: for example -> "jstrial_mac" 
+git push origin jstrial_mac
+
 
 
 
