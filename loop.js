@@ -290,7 +290,7 @@ findLongestWordLength("The quick brown fox jumped over the lazy dog");
 
 
 // EXERCISE HACKTIV8
-
+/*
 function largestPair(arr) {
   let subarr = [];
   arr = String(arr);
@@ -315,7 +315,135 @@ function largestPair(arr) {
 }
 console.log(largestPair(641523479284234373));
 
+*/
+// ascending
+/*
+function sort(arr) {
+
+  let store;
+  let swapped = true;
+  while (swapped) {
+    for (let i=0; i<arr.length-1; i++) {
+        while (arr[i] > arr[i+1]) {
+            if (arr[i] > arr[i+1]) {
+              store = arr[i];
+              arr[i] = arr[i+1];
+              arr[i+1] = store;
+              swapped = true;
+            } 
+        } 
+    }
+  }
+  
+  return arr;
+  
+}
+console.log(sort([5,4,3,2,1]));
+*/
+
+
+
+/*
+function sort(arr) {
+
+  let swapped = true;
+  let store;
+  do { 
+    console.log('before false')
+    swapped = false;
+      for (let i=0; i<arr.length-1; i++) {
+
+        if (arr[i] > arr[i+1]) {
+          store = arr[i];
+          arr[i] = arr[i+1];
+          arr[i+1] = store;
+          console.log(arr);
+          swapped = true;
+          // console.log('after true inside if loop')
+
+          
+        }
+      }
+      
+     
+  } while (swapped);
+  return arr;
+}
+
+console.log(sort([5,4,3,2,1]))
+*/
+
+
+
+/*
+function tes() {
+  let x = 0;
+  do {
+    x++;
+  } while (x < 5)
+  return x
+}
+
+console.log(tes());
+*/
 
 
 
 
+/* belum berhasil jalan !!!
+function asc(arr) {
+  let store;
+  let swapped = true;
+  while (swapped) {
+    console.log('hello');
+    for (let i=0; i<arr.length-1; i++) {
+      while(arr[0] < arr[i+1]) {
+        if ( arr[i]> arr[i+1]) { // looping 
+        store = arr[i];
+        arr[i] = arr[i+1];
+        arr[i+1] = store;
+ 
+        
+        }
+      }
+    } 
+
+  }
+   
+  return arr;
+}
+
+console.log(asc([5,4,3,2,1]));
+*/
+
+// checking duplicate element from Jay wengrow book
+
+function test(arr) {
+    var existN =[];
+    let step = 0;
+    for (var i=0; i<arr.length; i++) {
+      step+=1;
+      // console.log(existN[ arr[i] ]); // existN[ 7 ]
+      if(existN[ arr[i] ] === undefined) {
+        // console.log(existN[ arr[i] ], 'teerrrss'); // existN[ 7 ]
+        existN[ arr[i] ] = 1;
+      } else {
+        return true;
+      }
+    }
+    console.log(step);
+    return false;
+}
+
+console.log(test([7,6, 5, 7]));
+
+
+// penjelasan pada function diatas ini,
+// yg mana array dapat memiliki value 'empty' jk diprint akan muncul 'undefined';
+/*
+let arr = []; // [ <1 empty item>, 1, <1 empty item>, 1 ]
+arr[1] = 1;
+arr[3] = 1;
+
+console.log(arr);
+*/
