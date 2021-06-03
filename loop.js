@@ -459,18 +459,18 @@ console.log(arr);
 
 let objCoresys = [
     {
-        "tracking_id": "419862027",
+        "tracking_id": "4192222222027",
         "rowstate_name": "ENTRI VERIFIED",
         "pod_status_name": null,
-        "tracking_doc_no": "CGK8056427900024",
-        "reference_no": "110521019201000507",
-        "create_date": "2021-05-11 20:38:20",
+        "tracking_doc_no": "CGK8052222222200024",
+        "reference_no": "3564577988888122",
+        "create_date": "2018-05-11 20:38:20",
         "counter_name": "KANTOR PUSAT",
-        "user_inp": "CGK_YOGA",
-        "description": "kk_maybank_1105_susulan.xls",
+        "user_inp": "EEEEEEE",
+        "description": "kk_1105_susulan.xls",
         "origin": "JAKARTA",
         "destination": "CILANDAK",
-        "receiver_name": "JOSEPHINE SUKMADEWI KARJAD",
+        "receiver_name": "BENI MOON",
         "koli": "1",
         "kilo": "1",
         "packing_cost": "0",
@@ -482,21 +482,21 @@ let objCoresys = [
         "latitude": null,
         "longitude": null,
         "pod_type": null,
-        "awb_no": "CGK8056427900024"
+        "awb_no": "CGK8052222222200024"
     },
     {
-        "tracking_id": "419939504",
+        "tracking_id": "41989099333212342342359504",
         "rowstate_name": "MANIFEST OUTGOING",
         "pod_status_name": null,
-        "tracking_doc_no": "CMOCGK0002856642",
-        "reference_no": "110521019201000507",
-        "create_date": "2021-05-11 23:20:21",
+        "tracking_doc_no": "CGK8052222222200024",
+        "reference_no": "3564577988888122",
+        "create_date": "2019-05-11 23:20:21",
         "counter_name": "KANTOR PUSAT",
-        "user_inp": "CGK_GIYANTO",
+        "user_inp": "XXXXX",
         "description": "SB 80564279",
         "origin": "JAKARTA",
         "destination": "CILANDAK",
-        "receiver_name": "JOSEPHINE SUKMADEWI KARJAD",
+        "receiver_name": "SUKMADEWI",
         "koli": "1",
         "kilo": "1",
         "packing_cost": "0",
@@ -508,89 +508,9 @@ let objCoresys = [
         "latitude": null,
         "longitude": null,
         "pod_type": null,
-        "awb_no": "CGK8056427900024"
-    },
-    {
-        "tracking_id": "421289328",
-        "rowstate_name": "INCOMING",
-        "pod_status_name": null,
-        "tracking_doc_no": "CMIJSB0001791624",
-        "reference_no": "110521019201000507",
-        "create_date": "2021-05-17 08:08:12",
-        "counter_name": "KANTOR CABANG JAKARTA SELATAN B",
-        "user_inp": "JSB_RIDWAN",
-        "description": null,
-        "origin": "JAKARTA",
-        "destination": "CILANDAK",
-        "receiver_name": "JOSEPHINE SUKMADEWI KARJAD",
-        "koli": "1",
-        "kilo": "1",
-        "packing_cost": "0",
-        "surcharge_cost": "0",
-        "insurance_cost": "0",
-        "rowstate": "7",
-        "pod_receiver_name": "",
-        "pod_relation_name": "",
-        "latitude": null,
-        "longitude": null,
-        "pod_type": null,
-        "awb_no": "CGK8056427900024"
-    },
-    {
-        "tracking_id": "421366544",
-        "rowstate_name": "DELIVERY ",
-        "pod_status_name": null,
-        "tracking_doc_no": "DRSJSB0005460343",
-        "reference_no": "110521019201000507",
-        "create_date": "2021-05-17 09:35:00",
-        "counter_name": "KANTOR CABANG JAKARTA SELATAN B",
-        "user_inp": "JSB_RIDWAN",
-        "description": "KURIR: MUJIANTO KET: [ KURIR : KOTA ]  ",
-        "origin": "JAKARTA",
-        "destination": "CILANDAK",
-        "receiver_name": "JOSEPHINE SUKMADEWI KARJAD",
-        "koli": "1",
-        "kilo": "1",
-        "packing_cost": "0",
-        "surcharge_cost": "0",
-        "insurance_cost": "0",
-        "rowstate": "8",
-        "pod_receiver_name": "",
-        "pod_relation_name": "",
-        "latitude": null,
-        "longitude": null,
-        "pod_type": null,
-        "awb_no": "CGK8056427900024"
-    },
-    {
-        "tracking_id": "421542234",
-        "rowstate_name": "POD - DELIVERED",
-        "pod_status_name": "DITERIMA OLEH",
-        "tracking_doc_no": "DRSJSB0005460343",
-        "reference_no": "110521019201000507",
-        "create_date": "2021-05-17 15:21:39",
-        "counter_name": "KANTOR CABANG JAKARTA SELATAN B",
-        "user_inp": "JSBM107200930",
-        "description": "[KURIR: MUJIANTO] [PENERIMA: ELSA] [HUB: RECEPTIONIST / SEKRETARIS] [STATUS: DELIVERED - DL - DITERIMA OLEH] - KETERANGAN: OK",
-        "origin": "JAKARTA",
-        "destination": "CILANDAK",
-        "receiver_name": "JOSEPHINE SUKMADEWI KARJAD",
-        "koli": "1",
-        "kilo": "1",
-        "packing_cost": "0",
-        "surcharge_cost": "0",
-        "insurance_cost": "0",
-        "rowstate": "9",
-        "pod_receiver_name": "ELSA",
-        "pod_relation_name": "RECEPTIONIST / SEKRETARIS",
-        "latitude": "-6.2266289",
-        "longitude": "106.8114228",
-        "pod_type": "2",
-        "awb_no": "CGK8056427900024",
-        "pod_photo": "https://client.coresyssap.com/photo/pod/CGK8056427900024",
-        "pod_camera": "https://client.coresyssap.com/photo/pod_camera/CGK8056427900024",
-        "pod_signature": "https://client.coresyssap.com/photo/pod_signature/CGK8056427900024"
+        "awb_no": "419939504"
     }
+    
 ];
 
 
@@ -714,7 +634,7 @@ do {
 } while (value_test <= 5);
 */
 
-// ========================== GIT PUSH ORIGIN_MAC ============================
+// ========================== GIT PUSH  at jstrial_mac branch ============================
 
 
 
