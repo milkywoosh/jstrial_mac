@@ -2054,7 +2054,7 @@ console.log(x, y);
 
 
 
-=======
+// =======
 var input = "Fisika SMA Terpadu Kelas XI";
 var search = "SMA";
 var inputIter='';
@@ -2080,7 +2080,7 @@ for (let i=0; i<search.length; i++) {
   }
 }
 
-*/
+
 
 //ternary
 
