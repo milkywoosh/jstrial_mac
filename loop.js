@@ -417,7 +417,8 @@ console.log(asc([5,4,3,2,1]));
 */
 
 // checking duplicate element from Jay wengrow book
-
+// is there any duplicate in array??
+/*
 function test(arr) {
     var existN =[];
     let step = 0;
@@ -436,6 +437,8 @@ function test(arr) {
 }
 
 console.log(test([7,6, 5, 7]));
+*/
+
 
 
 // penjelasan pada function diatas ini,
@@ -447,3 +450,271 @@ arr[3] = 1;
 
 console.log(arr);
 */
+
+
+
+
+
+
+
+let objCoresys = [
+    {
+        "tracking_id": "419862027",
+        "rowstate_name": "ENTRI VERIFIED",
+        "pod_status_name": null,
+        "tracking_doc_no": "CGK8056427900024",
+        "reference_no": "110521019201000507",
+        "create_date": "2021-05-11 20:38:20",
+        "counter_name": "KANTOR PUSAT",
+        "user_inp": "CGK_YOGA",
+        "description": "kk_maybank_1105_susulan.xls",
+        "origin": "JAKARTA",
+        "destination": "CILANDAK",
+        "receiver_name": "JOSEPHINE SUKMADEWI KARJAD",
+        "koli": "1",
+        "kilo": "1",
+        "packing_cost": "0",
+        "surcharge_cost": "0",
+        "insurance_cost": "0",
+        "rowstate": "3",
+        "pod_receiver_name": "",
+        "pod_relation_name": "",
+        "latitude": null,
+        "longitude": null,
+        "pod_type": null,
+        "awb_no": "CGK8056427900024"
+    },
+    {
+        "tracking_id": "419939504",
+        "rowstate_name": "MANIFEST OUTGOING",
+        "pod_status_name": null,
+        "tracking_doc_no": "CMOCGK0002856642",
+        "reference_no": "110521019201000507",
+        "create_date": "2021-05-11 23:20:21",
+        "counter_name": "KANTOR PUSAT",
+        "user_inp": "CGK_GIYANTO",
+        "description": "SB 80564279",
+        "origin": "JAKARTA",
+        "destination": "CILANDAK",
+        "receiver_name": "JOSEPHINE SUKMADEWI KARJAD",
+        "koli": "1",
+        "kilo": "1",
+        "packing_cost": "0",
+        "surcharge_cost": "0",
+        "insurance_cost": "0",
+        "rowstate": "4",
+        "pod_receiver_name": "",
+        "pod_relation_name": "",
+        "latitude": null,
+        "longitude": null,
+        "pod_type": null,
+        "awb_no": "CGK8056427900024"
+    },
+    {
+        "tracking_id": "421289328",
+        "rowstate_name": "INCOMING",
+        "pod_status_name": null,
+        "tracking_doc_no": "CMIJSB0001791624",
+        "reference_no": "110521019201000507",
+        "create_date": "2021-05-17 08:08:12",
+        "counter_name": "KANTOR CABANG JAKARTA SELATAN B",
+        "user_inp": "JSB_RIDWAN",
+        "description": null,
+        "origin": "JAKARTA",
+        "destination": "CILANDAK",
+        "receiver_name": "JOSEPHINE SUKMADEWI KARJAD",
+        "koli": "1",
+        "kilo": "1",
+        "packing_cost": "0",
+        "surcharge_cost": "0",
+        "insurance_cost": "0",
+        "rowstate": "7",
+        "pod_receiver_name": "",
+        "pod_relation_name": "",
+        "latitude": null,
+        "longitude": null,
+        "pod_type": null,
+        "awb_no": "CGK8056427900024"
+    },
+    {
+        "tracking_id": "421366544",
+        "rowstate_name": "DELIVERY ",
+        "pod_status_name": null,
+        "tracking_doc_no": "DRSJSB0005460343",
+        "reference_no": "110521019201000507",
+        "create_date": "2021-05-17 09:35:00",
+        "counter_name": "KANTOR CABANG JAKARTA SELATAN B",
+        "user_inp": "JSB_RIDWAN",
+        "description": "KURIR: MUJIANTO KET: [ KURIR : KOTA ]  ",
+        "origin": "JAKARTA",
+        "destination": "CILANDAK",
+        "receiver_name": "JOSEPHINE SUKMADEWI KARJAD",
+        "koli": "1",
+        "kilo": "1",
+        "packing_cost": "0",
+        "surcharge_cost": "0",
+        "insurance_cost": "0",
+        "rowstate": "8",
+        "pod_receiver_name": "",
+        "pod_relation_name": "",
+        "latitude": null,
+        "longitude": null,
+        "pod_type": null,
+        "awb_no": "CGK8056427900024"
+    },
+    {
+        "tracking_id": "421542234",
+        "rowstate_name": "POD - DELIVERED",
+        "pod_status_name": "DITERIMA OLEH",
+        "tracking_doc_no": "DRSJSB0005460343",
+        "reference_no": "110521019201000507",
+        "create_date": "2021-05-17 15:21:39",
+        "counter_name": "KANTOR CABANG JAKARTA SELATAN B",
+        "user_inp": "JSBM107200930",
+        "description": "[KURIR: MUJIANTO] [PENERIMA: ELSA] [HUB: RECEPTIONIST / SEKRETARIS] [STATUS: DELIVERED - DL - DITERIMA OLEH] - KETERANGAN: OK",
+        "origin": "JAKARTA",
+        "destination": "CILANDAK",
+        "receiver_name": "JOSEPHINE SUKMADEWI KARJAD",
+        "koli": "1",
+        "kilo": "1",
+        "packing_cost": "0",
+        "surcharge_cost": "0",
+        "insurance_cost": "0",
+        "rowstate": "9",
+        "pod_receiver_name": "ELSA",
+        "pod_relation_name": "RECEPTIONIST / SEKRETARIS",
+        "latitude": "-6.2266289",
+        "longitude": "106.8114228",
+        "pod_type": "2",
+        "awb_no": "CGK8056427900024",
+        "pod_photo": "https://client.coresyssap.com/photo/pod/CGK8056427900024",
+        "pod_camera": "https://client.coresyssap.com/photo/pod_camera/CGK8056427900024",
+        "pod_signature": "https://client.coresyssap.com/photo/pod_signature/CGK8056427900024"
+    }
+];
+
+
+/*
+function listReceiver(arr, keys) {
+    let store = [];
+    let recname = Object.keys(arr).filter( (e) => { e ===  keys });
+    store.push(...recname);
+    return store;
+}
+// console.log(listReceiver(objCoresys, 'receiver_name'))
+*/
+
+/*
+function interObjKeys(arr) {
+  let store = new Array();
+  let i;
+  for ( i=0; i<arr.length; i++ ) {
+      store.push(Object.keys(arr[i]));
+  }
+
+  return store;
+}
+*/
+
+// console.log(interObjKeys(objCoresys));
+
+
+/*
+let identity = {
+                  'name': 'ben',
+                  'age' : 12,
+                }
+
+let addId = {
+              'id': 22003,
+            }
+// add new properties to indentity object
+Object.assign(identity, addId);
+console.log(identity);
+
+console.log(Object.values(identity));
+*/
+
+
+/*
+function powerNo(n, m) {
+    // if (m == 0)
+    //     return 1;
+
+    if (m == 1 || m == 0)
+        return 1; // last final return? maybe;
+    console.log('tess', n, m, powerNo(n, m - 1));
+    return n * powerNo(n, m - 1);//3-2: 9, 3-1: 27, 3-0: 27
+}
+
+console.log(powerNo(4, 2));
+*/
+
+
+// usage of Unary Opertator to operate Math calculation
+// source: Binar Academy Chpter Silver: Operator
+/*
+let a = "1";
+let b = "2";
+
+console.log(+a + +b); // result: 3 as a number
+console.log(a+b); // result: "12"
+
+
+let x = true;
+console.log(+x); // result: 1
+
+let y = false;
+console.log(y); // result: 0
+
+let z = "";
+console.log(+z) // result: 0
+
+let q = null;
+console.log(+q);  // result:0
+
+let w = undefined;
+console.log(+w);  // result: NaN
+
+let nan = NaN;
+console.log(+nan);  // result: NaN
+
+console.log(0 * 1);
+
+
+// INCREMENT/ DECREMENT 
+// PREFIX  dan  POSTFIX
+let tes = 1;
+let cek = ++tes
+console.log(tes);
+console.log(cek);
+// console.log(tes++);
+
+let a1 = 1;
+// console.log(a1); // 1
+let b1 = 1;
+// console.log(b1); // 1
+let c1 = ++a1;
+// console.log(c1); // 2
+let d1 = b1++;
+// console.log(d1); // 1
+
+console.log(a1, b1, c1, d1); // 2,2,2,1
+
+let v = (1+2, 3+4, 1+1);
+console.log("v: ", v); // result: 2, bcs 1+1 is at the last
+
+
+let value_test = 1;
+do {
+  
+  console.log(value_test);
+  value_test++;
+
+} while (value_test <= 5);
+*/
+
+
+
+
+
