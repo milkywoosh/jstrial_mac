@@ -50,6 +50,14 @@ git clone http address of repository
 git push origin jstrial_mac
 
 
+- go to specific branch
+git checkout -b namebranch
+
+- push to remote branch github
+git push origin HEAD:branch2
+
+- push to remote branch: jstrial_mac
+git push origin jstrial_mac
 
 
 

@@ -1,0 +1,1 @@
+test filex md to read with fs javascript

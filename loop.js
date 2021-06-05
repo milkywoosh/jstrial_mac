@@ -289,6 +289,352 @@ findLongestWordLength("The quick brown fox jumped over the lazy dog");
 */
 
 
+// EXERCISE HACKTIV8
+/*
+function largestPair(arr) {
+  let subarr = [];
+  arr = String(arr);
+  let value;
+  for (let i=0; i<arr.length; i++) {
+    if (i<arr.length-1) {
+      // console.log(i);
+      // console.log(arr[i])
+      // console.log(arr[i+1])
+      value = Number(arr[i]+ arr[i+1]);
+      subarr.push(value);
+    }
+  }
+  let val;
+  for (let j=0; j<subarr.length; j++) {
+   val = subarr[j]
+    if (val > subarr[j+1]) {
+      subarr[j+1] = val;
+    }
+  }
+  return val;
+}
+console.log(largestPair(641523479284234373));
+
+*/
+// ascending
+/*
+function sort(arr) {
+
+  let store;
+  let swapped = true;
+  while (swapped) {
+    for (let i=0; i<arr.length-1; i++) {
+        while (arr[i] > arr[i+1]) {
+            if (arr[i] > arr[i+1]) {
+              store = arr[i];
+              arr[i] = arr[i+1];
+              arr[i+1] = store;
+              swapped = true;
+            } 
+        } 
+    }
+  }
+  
+  return arr;
+  
+}
+console.log(sort([5,4,3,2,1]));
+*/
 
 
 
+/*
+function sort(arr) {
+
+  let swapped = true;
+  let store;
+  do { 
+    console.log('before false')
+    swapped = false;
+      for (let i=0; i<arr.length-1; i++) {
+
+        if (arr[i] > arr[i+1]) {
+          store = arr[i];
+          arr[i] = arr[i+1];
+          arr[i+1] = store;
+          console.log(arr);
+          swapped = true;
+          // console.log('after true inside if loop')
+
+          
+        }
+      }
+      
+     
+  } while (swapped);
+  return arr;
+}
+
+console.log(sort([5,4,3,2,1]))
+*/
+
+
+
+/*
+function tes() {
+  let x = 0;
+  do {
+    x++;
+  } while (x < 5)
+  return x
+}
+
+console.log(tes());
+*/
+
+
+
+
+/* belum berhasil jalan !!!
+function asc(arr) {
+  let store;
+  let swapped = true;
+  while (swapped) {
+    console.log('hello');
+    for (let i=0; i<arr.length-1; i++) {
+      while(arr[0] < arr[i+1]) {
+        if ( arr[i]> arr[i+1]) { // looping 
+        store = arr[i];
+        arr[i] = arr[i+1];
+        arr[i+1] = store;
+ 
+        
+        }
+      }
+    } 
+
+  }
+   
+  return arr;
+}
+
+console.log(asc([5,4,3,2,1]));
+*/
+
+// checking duplicate element from Jay wengrow book
+// is there any duplicate in array??
+/*
+function test(arr) {
+    var existN =[];
+    let step = 0;
+    for (var i=0; i<arr.length; i++) {
+      step+=1;
+      // console.log(existN[ arr[i] ]); // existN[ 7 ]
+      if(existN[ arr[i] ] === undefined) {
+        // console.log(existN[ arr[i] ], 'teerrrss'); // existN[ 7 ]
+        existN[ arr[i] ] = 1;
+      } else {
+        return true;
+      }
+    }
+    console.log(step);
+    return false;
+}
+
+console.log(test([7,6, 5, 7]));
+*/
+
+
+
+// penjelasan pada function diatas ini,
+// yg mana array dapat memiliki value 'empty' jk diprint akan muncul 'undefined';
+/*
+let arr = []; // [ <1 empty item>, 1, <1 empty item>, 1 ]
+arr[1] = 1;
+arr[3] = 1;
+
+console.log(arr);
+*/
+
+
+
+
+
+
+
+let objCoresys = [
+    {
+        "tracking_id": "4192222222027",
+        "rowstate_name": "ENTRI VERIFIED",
+        "pod_status_name": null,
+        "tracking_doc_no": "CGK8052222222200024",
+        "reference_no": "3564577988888122",
+        "create_date": "2018-05-11 20:38:20",
+        "counter_name": "KANTOR PUSAT",
+        "user_inp": "EEEEEEE",
+        "description": "kk_1105_susulan.xls",
+        "origin": "JAKARTA",
+        "destination": "CILANDAK",
+        "receiver_name": "BENI MOON",
+        "koli": "1",
+        "kilo": "1",
+        "packing_cost": "0",
+        "surcharge_cost": "0",
+        "insurance_cost": "0",
+        "rowstate": "3",
+        "pod_receiver_name": "",
+        "pod_relation_name": "",
+        "latitude": null,
+        "longitude": null,
+        "pod_type": null,
+        "awb_no": "CGK8052222222200024"
+    },
+    {
+        "tracking_id": "41989099333212342342359504",
+        "rowstate_name": "MANIFEST OUTGOING",
+        "pod_status_name": null,
+        "tracking_doc_no": "CGK8052222222200024",
+        "reference_no": "3564577988888122",
+        "create_date": "2019-05-11 23:20:21",
+        "counter_name": "KANTOR PUSAT",
+        "user_inp": "XXXXX",
+        "description": "SB 80564279",
+        "origin": "JAKARTA",
+        "destination": "CILANDAK",
+        "receiver_name": "SUKMADEWI",
+        "koli": "1",
+        "kilo": "1",
+        "packing_cost": "0",
+        "surcharge_cost": "0",
+        "insurance_cost": "0",
+        "rowstate": "4",
+        "pod_receiver_name": "",
+        "pod_relation_name": "",
+        "latitude": null,
+        "longitude": null,
+        "pod_type": null,
+        "awb_no": "419939504"
+    }
+    
+];
+
+
+/*
+function listReceiver(arr, keys) {
+    let store = [];
+    let recname = Object.keys(arr).filter( (e) => { e ===  keys });
+    store.push(...recname);
+    return store;
+}
+// console.log(listReceiver(objCoresys, 'receiver_name'))
+*/
+
+/*
+function interObjKeys(arr) {
+  let store = new Array();
+  let i;
+  for ( i=0; i<arr.length; i++ ) {
+      store.push(Object.keys(arr[i]));
+  }
+
+  return store;
+}
+*/
+
+// console.log(interObjKeys(objCoresys));
+
+
+/*
+let identity = {
+                  'name': 'ben',
+                  'age' : 12,
+                }
+
+let addId = {
+              'id': 22003,
+            }
+// add new properties to indentity object
+Object.assign(identity, addId);
+console.log(identity);
+
+console.log(Object.values(identity));
+*/
+
+
+/*
+function powerNo(n, m) {
+    // if (m == 0)
+    //     return 1;
+
+    if (m == 1 || m == 0)
+        return 1; // last final return? maybe;
+    console.log('tess', n, m, powerNo(n, m - 1));
+    return n * powerNo(n, m - 1);//3-2: 9, 3-1: 27, 3-0: 27
+}
+
+console.log(powerNo(4, 2));
+*/
+
+
+// usage of Unary Opertator to operate Math calculation
+// source: Binar Academy Chpter Silver: Operator
+/*
+let a = "1";
+let b = "2";
+
+console.log(+a + +b); // result: 3 as a number
+console.log(a+b); // result: "12"
+
+
+let x = true;
+console.log(+x); // result: 1
+
+let y = false;
+console.log(y); // result: 0
+
+let z = "";
+console.log(+z) // result: 0
+
+let q = null;
+console.log(+q);  // result:0
+
+let w = undefined;
+console.log(+w);  // result: NaN
+
+let nan = NaN;
+console.log(+nan);  // result: NaN
+
+console.log(0 * 1);
+
+
+// INCREMENT/ DECREMENT 
+// PREFIX  dan  POSTFIX
+let tes = 1;
+let cek = ++tes
+console.log(tes);
+console.log(cek);
+// console.log(tes++);
+
+let a1 = 1;
+// console.log(a1); // 1
+let b1 = 1;
+// console.log(b1); // 1
+let c1 = ++a1;
+// console.log(c1); // 2
+let d1 = b1++;
+// console.log(d1); // 1
+
+console.log(a1, b1, c1, d1); // 2,2,2,1
+
+let v = (1+2, 3+4, 1+1);
+console.log("v: ", v); // result: 2, bcs 1+1 is at the last
+
+
+let value_test = 1;
+do {
+  
+  console.log(value_test);
+  value_test++;
+
+} while (value_test <= 5);
+*/
+
+// ========================== GIT PUSH  at jstrial_mac branch ============================
+
+
+let trial = "trial pushing, refreshing";

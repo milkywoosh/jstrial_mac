@@ -34,6 +34,9 @@ for (let element of strings) {
 
 
 
+
+
+
 /* CLASS  -->  A JavaScript class is not an object.
                It is a template for JavaScript objects. */
 
@@ -125,36 +128,18 @@ console.log(Dumbledor.age());
     // those objects support 2 properties
       // "state", "result"
 
-let myPromise = new Promise(function (myResolve, myReject) {
+
+
+
+// const prom = new Promise(function (myResolve, myReject) {
+//     // code logic here
+
+//     //if else or anything
+//     myResolve();
+//     myReject();
+// });
+
+// prom.then(
     
-    // logic code
-    let meat = 'bacon' || 'dog' || 'swikey' || 'snake';
+// )
 
-    if (meat == 'bacon') {
-        myResolve('please look another food');
-    } else {
-        myReject('you can eat this!')
-    }
-
-});
-
-myPromise.then(
-    function(value) {return value}
-    function(error) {return error}
-;
-
-
-
-
-
-const prom = new Promise(function (myResolve, myReject) {
-    // code logic here
-
-    //if else or anything
-    myResolve();
-    myReject();
-});
-
-prom.then(
-    
-)
