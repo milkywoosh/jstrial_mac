@@ -58,3 +58,21 @@ git push origin jstrial_mac
 
 
 
+
+
+
+// HOW TO PULL REQUEST
+
+- go to REPO target punya orang
+- FORK ke akun pribadi
+- clone to local repo
+- create new branch : -> git branch "new_name_branch"
+- ke branch baru: -> git checkout new_name_branch
+- edit file yg akan kita kontribusi
+- git add . then git commit -m "any message"
+- git remote add upstream "address REPO target"
+- git push -u origin "spesifik branch target"
+- kemudian: git push -u origin "new_name_branch"
+- MENUNGGU RESPON OWNER REPO TARGET
+
+
